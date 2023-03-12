@@ -1,0 +1,130 @@
+{
+  "_MOD_uos_ideal_vehicle": {
+    "ideal_case": {
+      "scenarios": [
+        {
+          "routes": [
+            {
+              "nodes": [
+                753,
+                774
+              ],
+              "id": 1
+            },
+            {
+              "nodes": [
+                759,
+                770
+              ],
+              "id": 2
+            }
+          ],
+          "sample_times": 1,
+          "ego": {
+            "start_state_start": [
+              0,
+              0.0000,
+              16.667,
+              0.0000,
+              0.0000,
+              0.0000,
+              1.5000,
+              0.0001,
+              0.0001,
+              4.0000,
+              2.0000
+            ],
+            "route": 1,
+            "start_state_end": [
+              0,
+              0.0000,
+              16.667,
+              0.0000,
+              0.0000,
+              1.0000,
+              1.5000,
+              0.0001,
+              0.0001,
+              4.0000,
+              2.0000
+            ],
+            "controller": "planner",
+            "length": 4.6250,
+            "triger_time": 0.0000,
+            "start_state_step": [
+              0.0000,
+              0.0000,
+              0.0000,
+              0.0000,
+              0.0000,
+              0.1000,
+              0.0000,
+              0.0000,
+              0.0000,
+              0.0000,
+              0.0000
+            ]
+          },
+          "name": "busy_follow",
+          "cars": [
+            {
+              "length": 4.0000,
+              "revive": "false",
+              "start_state_start": [
+                5.6250,
+                0.0000,
+                5.5556,
+                0.0000,
+                0.0000,
+                0.0000,
+                1.5000,
+                0.0001,
+                0.0001,
+                4.0000,
+                2.0000
+              ],
+              "route": 2,
+              "start_state_end": [
+                5.6250,
+                0.0000,
+                5.5556,
+                0.0000,
+                0.0000,
+                1.0000,
+                1.5000,
+                0.0001,
+                0.0001,
+                4.0000,
+                2.0000
+              ],
+              "controller": "idm.priority_num",
+              "id": 1,
+              "triger_time": 0.0000,
+              "start_state_step": [
+                0.0000,
+                0.0000,
+                0.0000,
+                0.0000,
+                0.0000,
+                0.1000,
+                0.0000,
+                0.0000,
+                0.0000,
+                0.0000,
+                0.0000
+              ]
+            }
+          ]
+        }
+      ],
+      "work_flow": "run_sim"
+    }
+  },
+  "_MOD_uos_config": {
+    "platform": "SMP",
+    "roadmap_fname": "data/straight_5000_2.rmap",
+    "run_scene": "ideal_vehicle.ideal_case.pause_enabled.without_nome",
+    "vehicle_name": "vv6.car3",
+    "has_driver": 1
+  }
+}
